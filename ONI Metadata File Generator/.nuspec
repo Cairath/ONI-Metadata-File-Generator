@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>Cairath.ONIMetadataFileGenerator</id>
+    <title>ONI Metadata File Generator</title>
+    <version>1.0.0</version>
+    <authors>Cairath</authors>
+    <owners>Cairath</owners>
+    <license type="expression">MIT</license>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Provides a MSBuild task to generate mod.yaml and mod_info.yaml for Oxygen Not Included mods</description>
+    <summary>Provides a MSBuild task to generate mod.yaml and mod_info.yaml for Oxygen Not Included mods</summary>
+    <copyright>Copyright © 2021 Cairath</copyright>
+    <projectUrl>https://github.com/Cairath/ONI-Metadata-File-Generator</projectUrl>
+
+    <dependencies>
+      <dependency id="YamlDotNet" version="11.0.1" />
+      <dependency id="Microsoft.Build.Framework" version="15.1.1012" />
+      <dependency id="Microsoft.Build.Utilities.Core" version="15.1.1012" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="build\**" target="build"/>
+    <file src="buildMultiTargeting\**" target="buildMultiTargeting"/>
+    <file src="tasks\**" target="tasks"/>
+  </files>
+</package>

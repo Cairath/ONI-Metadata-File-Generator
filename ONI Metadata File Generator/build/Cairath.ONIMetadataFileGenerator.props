@@ -1,0 +1,7 @@
+﻿<Project TreatAsLocalProperty="TaskAssembly">
+  <PropertyGroup>
+    <TaskAssembly>$(MSBuildThisFileDirectory)..\tasks\net471\ONIMetadataFileGenerator.dll</TaskAssembly>
+  </PropertyGroup>
+
+  <UsingTask TaskName="GenerateMetadataFiles" AssemblyFile="$(TaskAssembly)"/>
+</Project>

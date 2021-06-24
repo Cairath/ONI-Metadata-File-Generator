@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Author>Cairath</Author>
+    <TargetFramework>net471</TargetFramework>
+    <NoPackageAnalysis>true</NoPackageAnalysis>
+    <BuildOutputTargetFolder>tasks</BuildOutputTargetFolder>
+    <AssemblyVersion>2021.6.24.0</AssemblyVersion>
+    <FileVersion>2021.6.24.16</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="build\Cairath.ONIMetadataFileGenerator.props" PackagePath="build\" />
+    <Content Include="buildMultiTargeting\Cairath.ONIMetadataFileGenerator.props" PackagePath="buildMultiTargeting\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="YamlDotNet" Version="11.0.1" />
+    <PackageReference Include="Microsoft.Build.Framework" Version="15.1.1012" />
+    <PackageReference Include="Microsoft.Build.Utilities.Core" Version="15.1.1012" />
+    <PackageReference Update="@(PackageReference)" PrivateAssets="All" />
+  </ItemGroup>
+</Project>
